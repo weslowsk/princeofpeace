@@ -37,6 +37,33 @@
   </h2>
 </header>
 
-<div id="social-media-banner">
-social media icons  
+<div id="breadcrumb-and-social-media">
+  <div id="breadcrumb">
+      {% assign b = " " %}
+      {% capture b %}{{site.baseurl}}{% endcapture %}
+      <span class="breadcrumb-item"><a href="{{site.baseurl}}/">Home</a></span>
+      {% for p in page.category %}
+      <span>&rtrif;</span><span>
+      <!--  <a href="{{b}}/{{p}}">{{p}}</a>
+      -->
+      {{p}}
+        </span>
+      {% capture b %}{{b}}/{{p}}{% endcapture %}
+      {%endfor%}
+  </div>
+  <div id="social-media-banner">
+    <a target="facebook" href="https://www.facebook.com/poplcregina/">
+      <img src="/images/social_media/facebook.png">
+    </a>
+    <a target="twitter" href="https://twitter.com/poplcregina">
+      <img src="/images/social_media/twitter.png">
+    </a>
+    <a target="g+" href="https://plus.google.com/112745526249582522449?prsrc=3">
+      <img src="/images/social_media/googleplus.png">
+    </a>
+    <a target="youtube" href="https://www.youtube.com/channel/UCHQrAb5Z_5JxMgJ6_QAQgCw">
+      <img src="/images/social_media/youtube.png">
+    </a>        
+  </div>
 </div>
+

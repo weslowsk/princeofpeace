@@ -20,7 +20,7 @@ time, mark, audio, video {
   vertical-align: baseline; }
 
 body {
-  font-family: arial,sans-serif;
+  font-family: 'Marcellus';
   background: white;
   margin: 0; }
 
@@ -36,12 +36,40 @@ header {
   color: white; }
 
 header h1 {
-  font-family: 'Marcellus';
   font-size: 4em; }
 
 header h2 {
   font-family: 'Dancing Script';
   font-size: 3em; }
 
+#breadcrumb {
+  padding-left: 2px; }
+
+#breadcrumb-and-social-media {
+  display: flex;
+  justify-content: space-between; }
+
 #social-media-banner {
-  color: blue; }
+  text-align: right;
+  padding: 2px 2px 0 0;
+  flex-grow: 2; }
+
+#social-media-banner a {
+  text-decoration-line: none;
+  margin-left: -2px; }
+
+#social-media-banner a img {
+  border-image-width: 0px; }
+
+#nav {
+  float: left;
+  min-width: 150px;
+  max-width: 33%;
+  margin: 2px;
+  background-color: #ff0000; }
+
+footer {
+  background: grey;
+  color: white;
+  text-align: center;
+  font-size: 0.7em; }
