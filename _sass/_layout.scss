@@ -1,0 +1,42 @@
+body {
+    font-family: arial,sans-serif;
+    background: white;
+    // removes any margin for the browser window
+    margin: 0;
+}
+
+#full-page {
+    // this centers the element
+    margin: auto;
+    max-width: 1050px;
+    // this creates a shadow around the elemnt
+    box-shadow: 0 20px 10px #555;
+}
+
+#content-window {
+
+}
+
+header {
+    min-height: 200px;
+    background-color: #900;
+    background-image: linear-gradient(#c00, #900);
+    color: white;
+}
+
+header h1 {
+    font-family: 'Marcellus';
+    font-size: 4em;
+}
+header h2 {
+    font-family: 'Dancing Script';
+    font-size: 3em;
+}
+
+#social-media-banner {
+    color: blue;
+}
+
+.page-shadow { 
+
+}
