@@ -8,13 +8,20 @@
       <div id="content-window">
     {% include header.html %}
 
-        <div>
+        <div id="content">
             <div id="nav">
-              {% for page in site.pages %}
-                {% if page.title %}
-                  <a href="{{site.baseurl}}{{page.url}}">{{page.title}}</a><br/>
+              {% for page_var in site.pages %}
+                {% if page_var.title %}
+                  <a href="{{site.baseurl}}{{page_var.url}}"{% if page.url == page_var.url %} class="active"{% endif %}>{{page_var.title}}</a><br/>
                 {% endif %}
               {% endfor %}
+              
+              {% assign pdf_files = site.static_files | where: "extname", ".pdf" %}
+              {% for file in pdf_files %}
+                <a target="{{ file.basename }}" href="{{site.baseurl}}{{file.path}}">{{ file.basename }}</a><br/>
+              {% endfor %}              
+
+             
             </div>
             <p>put content here </p>
             In default layout...<br/>

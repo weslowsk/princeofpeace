@@ -18,6 +18,10 @@ body {
 
 }
 
+#content {
+    min-height: 500px;
+}
+
 header {
     min-height: 200px;
     background-color: #900;
@@ -72,6 +76,11 @@ header h2 {
     // height: 150px;
     margin: 2px;
     background-color: #ff0000;
+    padding-left: 5px;
+}
+
+#nav a.active {
+    font-weight: bold;
 }
 
 footer {
