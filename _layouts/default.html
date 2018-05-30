@@ -12,20 +12,18 @@
             <div id="nav">
               {% for page_var in site.pages %}
                 {% if page_var.title %}
-                  <a href="{{site.baseurl}}{{page_var.url}}"{% if page.url == page_var.url %} class="active"{% endif %}>{{page_var.title}}</a><br/>
+                  <a href="{{site.baseurl}}{{page_var.url}}"{% if page.url == page_var.url %} class="active"{% endif %}>{{page_var.title}}</a><br/><hr/>
                 {% endif %}
               {% endfor %}
               
               {% assign pdf_files = site.static_files | where: "extname", ".pdf" %}
               {% for file in pdf_files %}
-                <a target="{{ file.basename }}" href="{{site.baseurl}}{{file.path}}">{{ file.basename }}</a><br/>
+                <a target="{{ file.basename }}" href="{{site.baseurl}}{{file.path}}">{{ file.basename }}</a><br/><hr/>
               {% endfor %}              
 
              
             </div>
-            <p>put content here </p>
-            In default layout...<br/>
-            Main content here: {{ content }}
+            <p>{{ content }}</p>
         </div>
 
     {% include footer.html %}
