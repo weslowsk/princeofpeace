@@ -4,6 +4,8 @@ body {
     background: white;
     // removes any margin for the browser window
     margin: 0;
+    color: #444
+
 }
 
 a {
@@ -12,6 +14,12 @@ a {
 
 p {
     padding-left: 10px;
+    
+}
+
+h1 {
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    font-size: 1.8em;
 }
 
 #full-page {
