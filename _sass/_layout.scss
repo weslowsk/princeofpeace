@@ -22,6 +22,10 @@ h1 {
     font-size: 1.8em;
 }
 
+li {
+    width: 99%;
+}
+
 #full-page {
     // this centers the element
     margin: auto;
@@ -35,7 +39,8 @@ h1 {
 }
 
 #content {
-    min-height: 500px;
+    // min-height: 500px;
+    height: 90vh;
 }
 
 header {
@@ -93,6 +98,7 @@ header h2 {
     min-width: 125px;
     max-width: 33%;
     // height: 150px;
+    height: 95%;
     margin-left: 25px;
     margin-right: 25px;
     background-color: rgba(240, 240, 240, 1);
