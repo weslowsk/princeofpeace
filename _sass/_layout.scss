@@ -22,8 +22,52 @@ h1 {
     font-size: 1.8em;
 }
 
+form input, form textarea {
+    margin-bottom: 1em;
+    font-family: 'Marcellus';
+    border: 1px solid #ddd;
+}
+
+form textarea {
+    margin-left: 20px;
+}
+
+input[type="text"] {
+    width: 15em;
+}
+
+input[type="email"] {
+    width: 15em;
+}
+
+table {
+    border: solid 1px #ddd;
+    border-spacing: 0px;
+    margin-right: 20px;
+}
+
+table thead tr {
+    background-color: #900;
+    background-image: linear-gradient(#c00, #900);
+}
+
+table thead tr th {
+    color: white;
+    padding: 8px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+table tbody tr td {
+    padding: 8px;
+    // white-space: nowrap;
+    font-size: 0.9em;
+}
+
 li {
     width: 99%;
+    margin-left: 20px;
 }
 
 #full-page {

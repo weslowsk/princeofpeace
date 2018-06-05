@@ -14,5 +14,9 @@ url: "https://new.princeofpeaceregina.ca"
 # Build settings
 markdown: kramdown
 
+# Collections
+#collections: 
+#- staff
+
 # Other content
 

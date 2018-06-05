@@ -2,5 +2,50 @@
 layout: default
 title: Contact Us
 ---
+<h1>Church Support Staff and Volunteers</h1>
+<p>To send us an email, fill out the form and click the Send button next to the recipient.</p>
+<br/>
+<form action="https://formspree.io/kevin.weslowski@gmail.com" method="POST">
+    <div style="display: flex">
+        <div>
+            <input type="text" name="name" placeholder="Your Name"><br/>
+            <input type="text" name="_subject" placeholder="Subject"><br/>
+            <input type="email" name="_replyto" placeholder="Your email"><br/>
+            <input type="hidden" name="_next" value="{{site.baseurl}}/contact.html" /><br/>
+            <input type="text" name="_gotcha" style="display:none" /><br/>
+        </div>
+        <div>
+            <textarea name="body" cols="40" rows="8" placeholder="Your message"></textarea><br/>
+            <!--
+            <input type="submit" value="Send">
+            -->
+        </div>        
+    </div>
 
-content in contact.html
+<br/>
+<script src="{{site.baseurl}}/assets/js/form.js"></script>
+<div>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Send</th>
+            </tr>
+        </thead>
+        <tbody>
+{% for staff in site.data.staff %}
+            <tr>
+                <td>{{ staff.name }}</td>
+                <td>{{ staff.title }}</td>
+                <td><a href="mailto:{{ staff.email }}">{{ staff.email }}</a></td>
+                <td nowrap>{{ staff.phone }}</td>
+                <td><input type="submit" value="Send"></td>
+            </tr>
+{% endfor %}     
+        </tbody>
+    </table>
+</div>
+</form>
