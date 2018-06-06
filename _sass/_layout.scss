@@ -63,7 +63,17 @@ table tbody tr td {
     padding: 8px;
     // white-space: nowrap;
     font-size: 0.9em;
+    border-bottom: 1px solid #ddd;
 }
+
+tr.odd {
+    background: #f8f8f8;
+}
+
+tr.hover:hover {
+    background: #fefde2;
+}
+
 
 li {
     width: 99%;
