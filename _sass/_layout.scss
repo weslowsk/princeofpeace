@@ -14,7 +14,10 @@ a {
 
 p {
     padding-left: 10px;
-    
+}
+
+p.center {
+    text-align: center;
 }
 
 h1 {
@@ -168,6 +171,7 @@ header h2 {
     margin-left: 25px;
     margin-right: 25px;
     background-color: rgba(240, 240, 240, 1);
+    background-image: linear-gradient(rgba(240, 240, 240, 1), white, white);
     padding-left: 25px;
     padding-right: 25px;
     padding-top: 10px;
