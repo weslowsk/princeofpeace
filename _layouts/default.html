@@ -1,33 +1,24 @@
 <!DOCTYPE html>
 <html>
-  
   {% include head.html %}
-
-  <body class="page-shadow">
+  <body>
     <div id="full-page">
-      <div id="content-window">
     {% include header.html %}
-
-        <div id="content">
-            <div id="nav">
-              {% for page_var in site.pages %}
-                {% if page_var.title %}
-                  <a href="{{site.baseurl}}{{page_var.url}}"{% if page.url == page_var.url %} class="active"{% endif %}>{{page_var.title}}</a><br/><hr/>
-                {% endif %}
-              {% endfor %}
-              
-              {% assign pdf_files = site.static_files | where: "extname", ".pdf" %}
-              {% for file in pdf_files %}
-                <a target="{{ file.basename }}" href="{{site.baseurl}}{{file.path}}">{{ file.basename }}</a><br/><hr/>
-              {% endfor %}              
-
-             
-            </div>
-            <p>{{ content }}</p>
-        </div>
-
-    {% include footer.html %}
+      <div id="content">
+          <div id="nav">
+            {% for page_var in site.pages %}
+              {% if page_var.title %}
+                <a href="{{site.baseurl}}{{page_var.url}}"{% if page.url == page_var.url %} class="active"{% endif %}>{{page_var.title}}</a><br/><hr/>
+              {% endif %}
+            {% endfor %}
+            {% assign pdf_files = site.static_files | where: "extname", ".pdf" %}
+            {% for file in pdf_files %}
+              <a target="{{ file.basename }}" href="{{site.baseurl}}{{file.path}}">{{ file.basename }}</a><br/><hr/>
+            {% endfor %}
+          </div>
+          <p>{{ content }}</p>
       </div>
+    {% include footer.html %}
     </div>
   </body>
 </html>

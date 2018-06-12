@@ -1,15 +1,13 @@
 body {
-    // font-family: arial,sans-serif;
     font-family: 'Marcellus';
     background: white;
     // removes any margin for the browser window
     margin: 0;
-    color: #444
-
+    color: #444;
 }
 
 a {
-    color: #c00
+    color: #c00;
 }
 
 p {
@@ -69,7 +67,6 @@ table thead tr th {
 
 table tbody tr td {
     padding: 8px;
-    // white-space: nowrap;
     font-size: 0.9em;
     border-bottom: 1px solid #ddd;
 }
@@ -103,12 +100,7 @@ ul.full-page {
     box-shadow: 0 20px 10px #555;
 }
 
-#content-window {
-
-}
-
 #content {
-    // min-height: 500px;
     height: 250vh;
 }
 
@@ -156,17 +148,10 @@ header h2 {
     border-image-width: 0px;
 }
 
-
-
-.page-shadow { 
-
-}
-
 #nav {
     float: left;
     min-width: 125px;
     max-width: 33%;
-    // height: 150px;
     height: 95%;
     margin-left: 25px;
     margin-right: 25px;
@@ -192,8 +177,6 @@ header h2 {
 #nav a:hover {
     color: #c00
 }
-
-
 
 footer {
     background: grey;

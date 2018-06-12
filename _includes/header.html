@@ -6,20 +6,15 @@
     Our Mission: Bringing People to Christ
   </h2>
 </header>
-
 <div id="breadcrumb-and-social-media">
   <div id="breadcrumb">
-      {% assign b = " " %}
-      {% capture b %}{{site.baseurl}}{% endcapture %}
-      <span class="breadcrumb-item"><a href="{{site.baseurl}}/">Home</a></span>
-      {% for p in page.title %}
-      <span>&rtrif;</span><span>
-      <!--  <a href="{{b}}/{{p}}">{{p}}</a>
-      -->
-      {{p}}
-        </span>
-      {% capture b %}{{b}}/{{p}}{% endcapture %}
-      {%endfor%}
+    <span class="breadcrumb-item">
+      <a href="{{site.baseurl}}/">Home</a>
+    </span>
+    {% for title in page.title %}
+    <span>&rtrif;</span>
+    <span>{{title}}</span>
+    {%endfor%}
   </div>
   <div id="social-media-banner">
     <a target="facebook" href="https://www.facebook.com/poplcregina/">
@@ -33,7 +28,6 @@
     </a>
     <a target="youtube" href="https://www.youtube.com/channel/UCHQrAb5Z_5JxMgJ6_QAQgCw">
       <img src="/images/social_media/youtube.png">
-    </a>        
+    </a>
   </div>
 </div>
-
