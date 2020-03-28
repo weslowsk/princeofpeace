@@ -14,7 +14,7 @@
             {% assign pdf_files = site.static_files | where: "extname", ".pdf" %}
             {% for file in pdf_files %}
               {% assign fileBaseNameFirstCharacter = file.basename | slice: 0 %}
-              {% if fileBaseNameFirstCharacter != "_" %}
+              {% if fileBaseNameFirstCharacter != "-" %}
                 <a target="{{ file.basename }}" href="{{site.baseurl}}{{file.path}}">{{ file.basename }}</a><br/><hr/>
               {% endif %}
               
