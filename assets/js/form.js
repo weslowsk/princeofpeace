@@ -7,7 +7,7 @@ function handleEmailFormSubmit(form, baseAction, emailAddress) {
 function handleEmailFormOnLoadEvent() {
     var formSubmitted = getParameterByName('formSubmitted');
     if (formSubmitted) {
-        alert("Your message was sent!.");
+        alert("Your message was sent!");
     }
 }
 
