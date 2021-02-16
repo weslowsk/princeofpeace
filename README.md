@@ -1,2 +1,2 @@
 # princeofpeace
-Prince of Peace Website..
+Prince of Peace Website
