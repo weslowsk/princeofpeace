@@ -10,6 +10,11 @@ a {
     color: #c00;
 }
 
+b {
+    font-weight: bold;
+    background-color: #fff701;
+}
+
 p {
     padding-left: 10px;
 }
@@ -188,4 +193,8 @@ footer {
     color: white;
     text-align: center;
     font-size: 0.7em;
+}
+
+.indent_align {
+    margin-left: 300px;
 }
