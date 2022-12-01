@@ -1,13 +1,8 @@
-- name: Daryl Solie
-  title: Pastor
-  phone: (306) 543-9900
-  email: d.solie@sasktel.net
-
-- name: Kevin Weslowski
-  title: Webmaster
-  email: webmaster@princeofpeaceregina.ca
-
 - name: Sandra Hayward 
   title: Office Administrative Assistant
   phone: (306) 543-9898
   email: poplc@sasktel.net
+
+- name: Kevin Weslowski
+  title: Webmaster
+  email: webmaster@princeofpeaceregina.ca
