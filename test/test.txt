@@ -1,1 +1,2 @@
 test
+This is a new line added from the Python script.
