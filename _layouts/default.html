@@ -6,7 +6,8 @@
     {% include header.html %}
       <div id="content">
           <div id="nav">
-            {% for page_var in site.pages %}
+            {% assign sorted_pages = site.pages | sort:"order" %}
+            {% for page_var in sorted_pages %}
               {% if page_var.title %}
                 <a href="{{site.baseurl}}{{page_var.url}}"{% if page.url == page_var.url %} class="active"{% endif %}>{{page_var.title}}</a><br/><hr/>
               {% endif %}
