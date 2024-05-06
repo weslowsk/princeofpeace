@@ -9,9 +9,11 @@ window.onload = function () {
 }
 </script>
 <h1>Church Support Staff and Volunteers</h1>
-<p>To send us an email, fill out the form and click the Send button next to the recipient.</p>
+<br/>
+<p>Please reach out to us if you have any questions or can’t find the information you’re looking for. Call or email us using the information below.</p>
 <br/>
 <form action="https://formspree.io/kevin.weslowski@gmail.com" method="POST">
+    <!--
     <div style="display: flex">
         <div>
             <input type="text" name="name" placeholder="Your Name"><br/>
@@ -26,6 +28,7 @@ window.onload = function () {
     </div>
     <br/>
     <script src="{{site.baseurl}}/assets/js/form.js"></script>
+    -->
     <div>
         <table>
             <thead>
@@ -34,7 +37,9 @@ window.onload = function () {
                     <th>Position</th>
                     <th>Email</th>
                     <th>Phone</th>
+                    <!--
                     <th>Send</th>
+                    -->
                 </tr>
             </thead>
             <tbody>
@@ -45,7 +50,9 @@ window.onload = function () {
                     <td>{{ staff.title }}</td>
                     <td><a href="mailto:{{ staff.email }}">{{ staff.email }}</a></td>
                     <td nowrap>{{ staff.phone }}</td>
+                    <!--
                     <td><input type="button" name="sendEmail{{forloop.index}}" value="Send" onclick="handleEmailFormSubmit(this.form, 'https://formspree.io/', '{{staff.email}}')"></td>
+                    -->
                 </tr>
     {% endfor %}
             </tbody>
