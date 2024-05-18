@@ -11,8 +11,9 @@ a {
 }
 
 b {
-    font-weight: bold;
-    background-color: #fff701;
+    font-weight: 900;
+    //background-color: #fff701;
+    text-shadow: 1px 1px 1px rgba(0,0,0,1.0);
 }
 
 p {
@@ -21,6 +22,10 @@ p {
 
 p.center {
     text-align: center;
+}
+
+p.larger1 {
+    font-size: 1.5em;
 }
 
 h1 {
@@ -182,6 +187,10 @@ h3 {
     padding-right: 25px;
     padding-top: 10px;
     border-radius: 5px;
+}
+
+#content2 {
+    float: none;
 }
 
 #nav a {
