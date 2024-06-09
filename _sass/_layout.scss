@@ -11,8 +11,9 @@ a {
 }
 
 b {
-    font-weight: bold;
-    background-color: #fff701;
+    font-weight: 900;
+    //background-color: #fff701;
+    text-shadow: 1px 1px 1px rgba(0,0,0,1.0);
 }
 
 p {
@@ -21,6 +22,10 @@ p {
 
 p.center {
     text-align: center;
+}
+
+p.larger1 {
+    font-size: 1.5em;
 }
 
 h1 {
@@ -115,7 +120,7 @@ ul.full-page {
 }
 
 #content {
-    height: 250vh;
+    height: 600vh;
 }
 
 header {
@@ -135,6 +140,13 @@ header h2 {
     font-family: 'Dancing Script';
     font-size: 3em;
     text-align: center;
+}
+
+h3 {
+    font-family: 'Dancing Script';
+    font-size: 4em;
+    text-align: center;
+    color: #888
 }
 
 #breadcrumb {
@@ -175,6 +187,10 @@ header h2 {
     padding-right: 25px;
     padding-top: 10px;
     border-radius: 5px;
+}
+
+#content2 {
+    float: none;
 }
 
 #nav a {
