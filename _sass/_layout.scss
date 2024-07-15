@@ -66,6 +66,10 @@ table {
     margin-right: 20px;
 }
 
+table.no_border {
+    border: 0px;
+}
+
 table thead tr {
     background-color: #900;
     background-image: linear-gradient(#c00, #900);
