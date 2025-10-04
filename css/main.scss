@@ -1,10 +1,5 @@
 ---
 ---
-@charset "utf-8";
-
-// Import partials from `sass_dir` (defaults to `_sass`)
-@import
-    "cross-browser",
-    "font",
-    "layout"
-;
+@use "cross-browser" as *;
+@use "font" as *;
+@use "layout" as *;
