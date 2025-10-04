@@ -1,5 +1,8 @@
 ---
 ---
-@use "cross-browser" as *;
-@use "font" as *;
-@use "layout" as *;
+@charset "utf-8";
+@import
+    "cross-browser",
+    "font",
+    "layout"
+;
